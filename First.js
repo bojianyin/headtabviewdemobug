@@ -14,6 +14,7 @@ const First = props => {
     <View style={{flex:1}}>
       <Text>Hello First!</Text>
       <Button title={'查看bug'} onPress={() => props.navigation.navigate('Sec')} />
+      <Button title={'查看jd搜索栏效果'} onPress={() => props.navigation.navigate('JdScrollPage')} />
     </View>
   );
 };

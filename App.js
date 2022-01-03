@@ -11,6 +11,7 @@ import type {Node} from 'react';
 import {SafeAreaView, Text, useColorScheme, View} from 'react-native';
 import First from './First';
 import Sec from './Sec';
+import JdScrollPage from './JdScrollPage';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
@@ -32,6 +33,7 @@ const App: () => Node = () => {
         <Stack.Navigator>
           <Stack.Screen name="First" component={First} />
           <Stack.Screen name="Sec" component={Sec} />
+          <Stack.Screen name="JdScrollPage" component={JdScrollPage} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
